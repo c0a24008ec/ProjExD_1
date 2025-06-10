@@ -26,6 +26,7 @@ def main():
         screen.blit(bg_img2, [-tmr+3200, 0])
         screen.blit(kk_img,kk_rct)
         key_lst = pg.key.get_pressed()
+        kk_rct.move_ip((-1, 0))
         if key_lst[pg.K_UP]:
             kk_rct.move_ip((0, -1))
         elif key_lst[pg.K_DOWN]:
