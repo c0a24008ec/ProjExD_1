@@ -28,9 +28,9 @@ def main():
         screen.blit(kk_img,kk_rct)
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
-            move = [0,-1]
+            move = [-1,-1]
         elif key_lst[pg.K_DOWN]:
-            move = [0,1]
+            move = [-1,1]
         elif key_lst[pg.K_RIGHT]:
             move = [1,0]
         elif key_lst[pg.K_LEFT]:
